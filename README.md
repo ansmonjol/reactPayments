@@ -1,1 +1,1 @@
-Run the project with './r.sh'
+Clone the project and init it with './r.sh'

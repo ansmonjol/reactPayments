@@ -64,9 +64,9 @@
             onClick: @handleToggle
             'Cancel'
 
-  # 'Normal' display, with action button
+  # Table display, with action button
   recordRow: ->
-      React.DOM.tr null,
+      React.DOM.tr null, 
         React.DOM.td null, @props.record.date
         React.DOM.td null, @props.record.title
         React.DOM.td null, amountFormat(@props.record.amount)

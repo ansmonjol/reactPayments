@@ -54,8 +54,6 @@
           React.createElement AmountBox, type: 'success', amount: @credits(), text: 'Credit'
           React.createElement AmountBox, type: 'info', amount: @balance(), text: 'Balance'
           React.createElement AmountBox, type: 'danger', amount: @debits(), text: 'Debit'
-      # Input pour créer un nouveau record
-      React.createElement RecordForm, handleNewRecord: @addRecord
       React.DOM.hr null
       # Table display chaque record
       React.DOM.table
@@ -71,4 +69,6 @@
         React.DOM.tbody null,
           for record in @state.records
             React.createElement Record, key: record.id, record: record, handleDeleteRecord: @deleteRecord, handleEditRecord: @updateRecord
+      # Input pour créer un nouveau record
+      React.createElement RecordForm, handleNewRecord: @addRecord
 
